@@ -8,10 +8,15 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+//function multiply(/*add your code here*/){
 
+    /*add your code here*/
+  
+    function multiply (num1, num2) {
+      return num1 * num2
+      }
+      
+      console.log(multiply(4, 5));
 
 /*
 
@@ -25,11 +30,16 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function catYears(/*add your code here*/){
+//function catYears(/*add your code here*/){
     /*add your code here*/
-}
+//}
 
-
+function catYear(){
+  let userAge = parseInt(prompt("Enter Your Age"));
+  return userAge * 7;
+   }
+  console.log("You are Currently " + catYear() + " Cat Years Old");
+  
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: Convert to Arrow Function  🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -46,14 +56,20 @@ console.log("Function was invoked!");
 
 myFunction();
 ----------------
+*/
+let myFunction=(a) => a
+console.log(myFunction("Function was invoked!"));
 
-let anotherFunction = function (param) {
+/*let anotherFunction = function (param) {
   return param;
 };
-
 anotherFunction("Example");
-
+*/
+let anotherFunction=(x) => x
+console.log(anotherFunction("Example"));
+/*
 ---------------
+
 
 let add = function (param1, param2) {
   return param1 + param2;
@@ -62,7 +78,9 @@ let add = function (param1, param2) {
 add(1,2);
 
 */
-
+let add = (num1, num2)=>
+num1 + num2
+console.log(add(1,2));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: Rock, Paper, Scissors - Let's play against the computer! 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -100,6 +118,19 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
+//function annoyingSong(/*add your code here*/){
         /*add your code here*/
-  }
+  //}
+  var word = "bottles";
+var count = 99;
+while (count > 0) {
+    console.log(count + " " + word + " of beer on the wall");
+    console.log(count + " " + word + " of beer,");
+    console.log("Take one down, pass it around,");
+    count = count - 1;
+    if (count > 0) {
+        console.log(count + " " + word + " of beer on the wall.");
+    } else {
+        console.log("No more " + word + " of beer on the wall.");
+    }
+}
